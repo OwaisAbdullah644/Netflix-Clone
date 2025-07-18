@@ -6,12 +6,12 @@ import HeaderSection from '../components/HeaderSection'
 const SignUp = () => {
   return (
     <>
-    <div className=" w-full max-w-[100%]">
+    
 
       <HeaderSection/>
       <SignUpForm/>
       <SignUpFooterSection/>
-</div>
+
     </>
   )
 }

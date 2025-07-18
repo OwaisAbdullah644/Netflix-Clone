@@ -3,7 +3,7 @@ import React from 'react'
 const SignUpFooterSection = () => {
   return (
     <>
-                  <div className="bg-[#f3f3f3] text-[#999a9b] text-[13px] flex justify-between mt-16 py-14 pl-8 text-sm sm:text-base sm:hidden">
+                  <div className="bg-[#f3f3f3] text-[#999a9b] max-w-full text-[13px] flex justify-between mt-16 py-14 pl-8 text-sm sm:text-base sm:hidden">
   <div className="grid grid-cols-1 gap-2 w-full">
     <p className='text-[13px]'>Questions? Contact us.</p>
     <p>FAQ</p>
@@ -20,7 +20,7 @@ const SignUpFooterSection = () => {
     </div>
 </div>
 
-<div className="bg-[#f3f3f3] text-[#999a9b] hidden sm:flex md:hidden sm:text-[13px] mt-16 py-12 px-0 text-[10px] sm:text-base">
+<div className="bg-[#f3f3f3] text-[#999a9b] w-[100%] hidden sm:flex md:hidden sm:text-[13px] mt-16 py-12 px-0 text-[10px] sm:text-base">
   <div className="flex flex-col gap-2 pl-8 whitespace-nowrap">
     <p>Questions? Contact us.</p>
     <p>FAQ</p>
