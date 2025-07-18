@@ -81,15 +81,16 @@ const planDetails = {
   return (
     <>
       <div className='main-parent '>
-        <div className="w-full max-w-[729px] mx-auto lg:max-w-[70%]">
+       
   
 
-        <div className='headings sm:px-12 md:px-22 lg:px-0'>
+        <div className='headings sm:px-12 md:px-22 max-w-[1080px] mx-auto'>
           <p className='text-[13px] '>STEP <span className='font-semibold'>1</span> OF <span className='font-semibold'>3</span></p>
-          <p className='text-[32px] font-semibold sm:text-[30px] '>Choose the plan that’s right for you</p>
+          <p className='text-[32px] font-semibold sm:text-[30px] lg:mr-0'>Choose the plan that’s right for you</p>
         </div>
-        <div className="four-columns grid grid-cols-4 pt-12 sm:px-10  sm:mx-6 md:px-12 lg:hidden ">
-          <div onClick={() => setSelectedPlan('mobile')} className={`relative sub-heading border rounded-2xl h-28 w-18 py-4 px-2 sm:w-31 md:h-30 md:w-36 cursor-pointer ${selectedPlan === 'mobile' ? 'bg-gradient-to-tl from-[#323e98] to-blue-500 text-white' : 'border-gray-400'}`}>
+        <div className="flex justify-between items-center pt-12 px-4 sm:px-10 sm:mx-6 md:px-12 lg:hidden gap-2 overflow-x-auto">
+
+          <div onClick={() => setSelectedPlan('mobile')} className={`relative sub-heading border rounded-2xl h-28 w-28 py-4 px-2 sm:w-40 md:h-30  cursor-pointer ${selectedPlan === 'mobile' ? 'bg-gradient-to-tl from-[#323e98] to-blue-500 text-white' : 'border-gray-400'}`}>
             {selectedPlan === 'mobile' && (<div className="absolute bottom-2 right-2 bg-white rounded-full p-1 shadow-md">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-red-600" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z" /></svg>
             </div>)}
@@ -97,14 +98,14 @@ const planDetails = {
           <p className="text-[10px]">480p</p>
           </div>
 
-          <div onClick={() => setSelectedPlan('basic')} className={`relative sub-heading border border-gray-400 rounded-2xl h-28 w-18 sm:w-31 md:h-30 md:w-36 py-4 px-4 ${selectedPlan === 'basic' ? 'bg-gradient-to-br from-[#523cc2] to-[#353e9c] text-white' : 'border-gray-400' }`}>
+          <div onClick={() => setSelectedPlan('basic')} className={`relative sub-heading border border-gray-400 rounded-2xl h-28 w-28 sm:w-40 md:h-30  py-4 px-4 ${selectedPlan === 'basic' ? 'bg-gradient-to-br from-[#523cc2] to-[#353e9c] text-white' : 'border-gray-400' }`}>
              {selectedPlan === 'basic' && (<div className="absolute bottom-2 right-2 bg-white rounded-full p-1 shadow-md">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-red-600" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z" /></svg>
             </div>)}
             <p className='text-[12px] font-semibold'>Basic</p>
             <p className='text-[10px]'>720p</p>
           </div>
-          <div onClick={() => setSelectedPlan('standard')} className={`relative sub-heading border border-gray-400 rounded-2xl h-28 w-18 sm:w-31 md:h-30 md:w-36 py-4 px-2 ${selectedPlan === 'standard' ? 'bg-gradient-to-tl from-[#214f9c] to-[#9339cd] text-white' : 'border-gray-400'}`}>
+          <div onClick={() => setSelectedPlan('standard')} className={`relative sub-heading border border-gray-400 rounded-2xl h-28 w-28 sm:w-40 md:h-30  py-4 px-2 ${selectedPlan === 'standard' ? 'bg-gradient-to-tl from-[#214f9c] to-[#9339cd] text-white' : 'border-gray-400'}`}>
            {selectedPlan === 'standard' && (<div className="absolute bottom-2 right-2 bg-white rounded-full p-1 shadow-md">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-red-600" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z" /></svg>
             </div>)}
@@ -112,7 +113,7 @@ const planDetails = {
             <p className='text-[10px]'>1080p</p>
           </div>
           
-         <div onClick={() => setSelectedPlan('premium')} className={`sub-heading relative  border border-gray-400 rounded-2xl h-28 w-18 sm:w-31 md:h-30 md:w-36 py-4 px-2  ${selectedPlan === 'premium' ? 'bg-gradient-to-br from-[#cf1024] to-[#204e9c] text-white' : 'border-gray-400'}`}>
+         <div onClick={() => setSelectedPlan('premium')} className={`sub-heading relative  border border-gray-400 rounded-2xl h-28 w-28 sm:w-40 md:h-30  py-4 px-2  ${selectedPlan === 'premium' ? 'bg-gradient-to-br from-[#cf1024] to-[#204e9c] text-white' : 'border-gray-400'}`}>
           {selectedPlan === 'premium' && (<div className="absolute bottom-2 right-2 bg-white rounded-full p-1 shadow-md">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-red-600" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z" /></svg>
             </div>)}
@@ -128,7 +129,7 @@ const planDetails = {
               selectedPlan === 'basic' && (
               
             
-              <div className="content grid grid-cols-2 gap-y-4 sm:px-18 md:px-22 py-4 lg:hidden text-sm">
+              <div className="content grid grid-cols-2 gap-y-4 sm:px-18 md:px-20 px-4 py-4 lg:hidden text-sm">
               <div className="text-left font-medium text-gray-700">{planDetails[selectedPlan].card_title}</div>
               <div className="text-right font-semibold">{planDetails[selectedPlan].card_price}</div>
               <div className='border-b border-gray-300 col-span-2 '></div>
@@ -162,7 +163,7 @@ const planDetails = {
               selectedPlan === 'mobile' && (
               
             
-              <div className="content grid grid-cols-2 gap-y-4 py-4 sm:px-18 md:px-22 lg:hidden text-sm">
+              <div className="content grid grid-cols-2 gap-y-4 py-4 sm:px-18 md:px-22 px-4 lg:hidden text-sm">
               <div className="text-left font-medium text-gray-700">{planDetails[selectedPlan].card_title}</div>
               <div className="text-right font-semibold">{planDetails[selectedPlan].card_price}</div>
               <div className='border-b border-gray-300 col-span-2 '></div>
@@ -196,7 +197,7 @@ const planDetails = {
               selectedPlan === 'standard' && (
               
             
-              <div className="content grid grid-cols-2 gap-y-4 py-4 sm:px-18 md:px-22 lg:hidden text-sm">
+              <div className="content grid grid-cols-2 gap-y-4 py-4 sm:px-18 md:px-22 px-4 lg:hidden text-sm">
               <div className="text-left font-medium text-gray-700">{planDetails[selectedPlan].card_title}</div>
               <div className="text-right font-semibold">{planDetails[selectedPlan].card_price}</div>
               <div className='border-b border-gray-300 col-span-2 '></div>
@@ -227,10 +228,12 @@ const planDetails = {
 
 
            {
+
               selectedPlan === 'premium' && (
               
+                
             
-              <div className="content grid grid-cols-2 gap-y-4 sm:px-18 py-4 md:px-22 lg:hidden text-sm">
+              <div className="content grid grid-cols-2 gap-y-4 sm:px-18 py-4 md:px-22 px-4 lg:hidden text-sm">
               <div className="text-left font-medium text-gray-700">{planDetails[selectedPlan].card_title}</div>
               <div className="text-right font-semibold">{planDetails[selectedPlan].card_price}</div>
               <div className='border-b border-gray-300 col-span-2 '></div>
@@ -258,8 +261,11 @@ const planDetails = {
               )
             }
 
-              <div className='w-[60] lg:pt-10 grid-cols-4 hidden lg:grid'>
-                <div onClick={() => setSelectedPlan('mobile')} className={`relative border border-gray-300 w-[250px] h-[680px] bg-white rounded-2xl ${selectedPlan === 'mobile' ? 'shadow-2xl' : ''}`}>
+              <div className="hidden lg:grid lg:grid-cols-4 gap-6 lg:pt-10 px-6 max-w-[1080px] mx-auto ">
+
+
+
+                <div onClick={() => setSelectedPlan('mobile')} className={`relative border border-gray-300 w-[250px] h-[680px] bg-white rounded-2xl ${selectedPlan === 'mobile' ? 'shadow-2xl transform duration-300' : ''}`}>
                 <div className='rounded-lg grad bg-gradient-to-tl from-blue-700 to-[#323e98] text-white w-[95%] h-20 mt-2 mx-2 pl-2 pt-2 font-semibold text-[16px]'>
                  {selectedPlan === 'mobile' && (<div className="absolute top-14 right-4 bg-white rounded-full p-1 shadow-md">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-[#323e98]" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z" /></svg>
@@ -270,32 +276,32 @@ const planDetails = {
                 <div className='grid gap-4 px-6 py-4'>
                   <div>
                   <p className='text-[13px]'>{planDetails['mobile'].card_title}</p>
-                  <p>{planDetails['mobile'].card_price}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['mobile'].card_price}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['mobile'].card_quality_title}</p>
-                  <p >{planDetails['mobile'].card_quality}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['mobile'].card_quality}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['mobile'].card_resolution_title}</p>
-                  <p>{planDetails['mobile'].card_resolution}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['mobile'].card_resolution}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['mobile'].card_supported_title}</p>
-                  <p>{planDetails['mobile'].card_supported}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['mobile'].card_supported}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['mobile'].card_household_title}</p>
-                  <p>{planDetails['mobile'].card_household}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['mobile'].card_household}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['mobile'].card_download_title}</p>
-                  <p>{planDetails['mobile'].card_download}</p>
+                  <p className='text-sm'>{planDetails['mobile'].card_download}</p>
                 </div>
                 </div>
                 
@@ -304,7 +310,7 @@ const planDetails = {
 
 
 
-              <div onClick={() => setSelectedPlan('basic')} className={`relative border border-gray-300 w-[250px] h-[680px] bg-white rounded-2xl ${selectedPlan === 'basic' ? 'shadow-2xl' : ''}`}>
+              <div onClick={() => setSelectedPlan('basic')} className={`relative border border-gray-300 w-[250px] h-[680px] bg-white rounded-2xl ${selectedPlan === 'basic' ? 'shadow-2xl transform duration-300' : ''}`}>
                 <div className='rounded-lg grad bg-gradient-to-tl to-[#113779] from-[#573cc7] text-white w-[95%] h-20 mt-2 mx-2 pl-2 pt-2 font-semibold text-[16px]'>
                  {selectedPlan === 'basic' && (<div className="absolute top-14 right-4 bg-white rounded-full p-1 shadow-md">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-[#573cc7]" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z" /></svg>
@@ -315,32 +321,32 @@ const planDetails = {
                 <div className='grid gap-4 px-6 py-4'>
                   <div>
                   <p className='text-[13px]'>{planDetails['basic'].card_title}</p>
-                  <p>{planDetails['basic'].card_price}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['basic'].card_price}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['basic'].card_quality_title}</p>
-                  <p >{planDetails['basic'].card_quality}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p  className='text-sm'>{planDetails['basic'].card_quality}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['basic'].card_resolution_title}</p>
-                  <p>{planDetails['basic'].card_resolution}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['basic'].card_resolution}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['basic'].card_supported_title}</p>
-                  <p>{planDetails['basic'].card_supported}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['basic'].card_supported}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['basic'].card_household_title}</p>
-                  <p>{planDetails['basic'].card_household}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['basic'].card_household}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['basic'].card_download_title}</p>
-                  <p>{planDetails['basic'].card_download}</p>
+                  <p className='text-sm'>{planDetails['basic'].card_download}</p>
                 </div>
                 </div>
                 
@@ -348,7 +354,7 @@ const planDetails = {
 
 
 
-                   <div onClick={() => setSelectedPlan('standard')} className={`relative border border-gray-300 w-[250px] h-[680px] bg-white rounded-2xl ${selectedPlan === 'standard' ? 'shadow-2xl' : ''}`}>
+                   <div onClick={() => setSelectedPlan('standard')} className={`relative border border-gray-300 w-[250px] h-[680px] bg-white rounded-2xl ${selectedPlan === 'standard' ? 'shadow-2xl transform duration-300' : ''}`}>
                 <div className='rounded-lg grad bg-gradient-to-tl  to-[#113779] from-[#8a3ac7] text-white w-[95%] h-20 mt-2 mx-2 pl-2 pt-2 font-semibold text-[16px]'>
                  {selectedPlan === 'standard' && (<div className="absolute top-14 right-4 bg-white rounded-full p-1 shadow-md">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-[#8a3ac7]" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z" /></svg>
@@ -359,32 +365,32 @@ const planDetails = {
                 <div className='grid gap-4 px-6 py-4'>
                   <div>
                   <p className='text-[13px]'>{planDetails['standard'].card_title}</p>
-                  <p>{planDetails['standard'].card_price}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['standard'].card_price}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['standard'].card_quality_title}</p>
-                  <p >{planDetails['standard'].card_quality}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p  className='text-sm'>{planDetails['standard'].card_quality}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['standard'].card_resolution_title}</p>
-                  <p>{planDetails['standard'].card_resolution}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['standard'].card_resolution}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['standard'].card_supported_title}</p>
-                  <p>{planDetails['standard'].card_supported}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['standard'].card_supported}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['standard'].card_household_title}</p>
-                  <p>{planDetails['standard'].card_household}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['standard'].card_household}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['standard'].card_download_title}</p>
-                  <p>{planDetails['standard'].card_download}</p>
+                  <p className='text-sm'>{planDetails['standard'].card_download}</p>
                 </div>
                 </div>
                 
@@ -392,43 +398,48 @@ const planDetails = {
 
 
 
-               <div onClick={() => setSelectedPlan('premium')} className={`relative border border-gray-300 w-[250px] h-[680px] bg-white rounded-2xl ${selectedPlan === 'premium' ? 'shadow-2xl' : ''}`}>
+               <div onClick={() => setSelectedPlan('premium')} className={`relative border border-gray-300 w-[250px] h-[680px] bg-white rounded-2xl ${selectedPlan === 'premium' ? 'shadow-2xl transform duration-300' : ''}`}>
                 <div className='rounded-lg grad bg-gradient-to-tl from-[#9e2148] to-[#021397] text-white w-[95%] h-20 mt-2 mx-2 pl-2 pt-2 font-semibold text-[16px]'>
                  {selectedPlan === 'premium' && (<div className="absolute top-14 right-4 bg-white rounded-full p-1 shadow-md">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-red-600" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z" /></svg>
             </div>)}
+                  
+                  <div className={`absolute w-60  h-16 bottom-160 left-1 rounded-t-xl text-sm text-center pt-1 z-[-10] ${selectedPlan === 'premium' ? 'bg-[#e50913]' : 'bg-[#4c4c4c]'}`}>
+                  <p>Most popular</p>
+                  </div>
+
                   <p>Premium</p>
                   <p>4k + HDR</p>
                 </div>
                 <div className='grid gap-4 px-6 py-4'>
                   <div>
                   <p className='text-[13px]'>{planDetails['premium'].card_title}</p>
-                  <p>{planDetails['premium'].card_price}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['premium'].card_price}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['premium'].card_quality_title}</p>
-                  <p >{planDetails['premium'].card_quality}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p  className='text-sm'>{planDetails['premium'].card_quality}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['premium'].card_resolution_title}</p>
-                  <p>{planDetails['premium'].card_resolution}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['premium'].card_resolution}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['premium'].card_supported_title}</p>
-                  <p>{planDetails['premium'].card_supported}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['premium'].card_supported}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['premium'].card_household_title}</p>
-                  <p>{planDetails['premium'].card_household}</p>
-                  <div className='border-b border-gray-400 col-span-2 pt-5'></div>
+                  <p className='text-sm'>{planDetails['premium'].card_household}</p>
+                  <div className='border-b border-gray-300 col-span-2 pt-5'></div>
                 </div>
                   <div>
                   <p className='text-[13px]'>{planDetails['premium'].card_download_title}</p>
-                  <p>{planDetails['premium'].card_download}</p>
+                  <p className='text-sm'>{planDetails['premium'].card_download}</p>
                 </div>
                 </div>
                 
@@ -439,24 +450,26 @@ const planDetails = {
               
 
 
-            <div className='three-para pt-8 text-[13px] grid gap-4 sm:gap-y-1 lg:pl-0 text-[#737373] sm:py-5  sm:px-18 md:px-22 '>
+            <div className=' pt-8 text-[13px] grid gap-4 sm:gap-y-1  text-[#737373] sm:py-5 px-4 sm:px-18 md:px-22 xl:mx-40 max-w-[1080px]'>
               <p>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <span className='text-blue-600'>Terms of Use </span> for more details.</p>
               <p>Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard, and 1 with Basic and Mobile.</p>
               <p className='sm:mt-2'>Live events are included with any Netflix plan and contain ads.</p>
 
               
             </div>
-<Link to="/platform">
-  <button className="bg-[#e50913] border-none sm:mt-2 sm:ml-20 lg:ml-55 active:border-none hover:bg-red-700 transform duration-200 text-white py-4 text-3xl sm:mx-10  font-semibold rounded w-full max-w-[440px]">
-    Next
-  </button>
+<Link
+  to="/platform"
+  className="bg-[#e50913] border-none sm:mt-2 mx-4 sm:ml-20 xl:ml-95 active:border-none hover:bg-red-700 transform duration-200 text-white py-4 text-3xl sm:mx-10 font-semibold rounded w-full max-w-[440px] block text-center"
+>
+  Next
 </Link>
 
 
 
 
+
         </div>
-      </div>
+      
     </>
   )
 }
