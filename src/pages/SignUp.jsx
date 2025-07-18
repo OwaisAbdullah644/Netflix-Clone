@@ -5,14 +5,15 @@ import HeaderSection from '../components/HeaderSection'
 
 const SignUp = () => {
   return (
-    <>
-    
+    <div className="min-h-screen flex flex-col">
+      <HeaderSection />
 
-      <HeaderSection/>
-      <SignUpForm/>
-      <SignUpFooterSection/>
+      <div className="flex-grow">
+        <SignUpForm />
+      </div>
 
-    </>
+      <SignUpFooterSection />
+    </div>
   )
 }
 

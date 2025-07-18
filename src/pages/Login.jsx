@@ -4,8 +4,8 @@ import "../styles/styles.css";
 
 const Login = () => {
   return (
-    <div className="min-h-screen bg-black sm:bg-[url('/netflix-bg.jpg')] overflow-x-hidden bg-cover bg-center bg-no-repeat">
-      <div className="bg-black/60 w-full h-full">
+    <div className="min-h-screen flex flex-col bg-black sm:bg-[url('/netflix-bg.jpg')] overflow-x-hidden bg-cover bg-center bg-no-repeat">
+      <div className="bg-black/60 w-full ">
         <div className="px-6 pt-6 sm:pl-12 sm:pt-0">
           <img src="netflix-logo.svg" alt="Netflix Logo" className="h-26 sm:h-50 sm:pb-16 md:h-40 lg:h-60 lg:-pl-16 lg:-mt-10" />
         </div>
@@ -18,7 +18,7 @@ const Login = () => {
 
 
 
-<div className="bg-[rgb(22,22,22)] text-gray-300 mt-16 py-12 px-6 text-sm sm:text-base sm:hidden">
+<div className="bg-[rgb(22,22,22)] text-gray-300 mt-70  py-20 px-6 text-sm sm:text-base sm:hidden">
   <div className="grid grid-cols-2 gap-4">
     <p className="underline">FAQ</p>
     <p className="underline">Help Center</p>
@@ -29,7 +29,7 @@ const Login = () => {
   </div>
 </div>
 
-<div className="bg-[rgb(22,22,22)] text-gray-300 hidden sm:flex lg:hidden mt-16 py-12 px-16 text-sm sm:text-base">
+<div className="bg-[rgb(22,22,22)] text-gray-300 hidden sm:flex lg:hidden mt-70 py-12 px-16 text-sm sm:text-base">
   <div className='flex flex-col gap-6 py-12'>
     <p>Questions? Contact us.</p>
     <p className="underline">FAQ</p>
@@ -43,7 +43,7 @@ const Login = () => {
   </div>
 </div>
 
-<div className="bg-[rgb(22,22,22)] text-gray-300 hidden lg:flex  mt-16 py-16 px-16 text-sm md:text-base">
+<div className="bg-[rgb(22,22,22)] text-gray-300 hidden lg:flex  mt-70 py-16 px-16 text-sm md:text-base">
   <div className='flex flex-col gap-4 pt-2'>
     <p>Questions? Contact us.</p>
     <p className="underline">FAQ</p>

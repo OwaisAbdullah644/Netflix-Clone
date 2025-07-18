@@ -80,11 +80,11 @@ const planDetails = {
 
   return (
     <>
-      <div className='main-parent '>
+      <div className='main-parent'>
        
   
 
-        <div className='headings sm:px-12 md:px-22 max-w-[1080px] mx-auto'>
+        <div className='headings sm:px-12 md:px-22 max-w-[1080px]  mx-auto'>
           <p className='text-[13px] '>STEP <span className='font-semibold'>1</span> OF <span className='font-semibold'>3</span></p>
           <p className='text-[32px] font-semibold sm:text-[30px] lg:mr-0'>Choose the plan that’s right for you</p>
         </div>
@@ -261,7 +261,7 @@ const planDetails = {
               )
             }
 
-              <div className="hidden lg:grid lg:grid-cols-4 gap-6 lg:pt-10 px-6 max-w-[1080px] mx-auto ">
+              <div className="hidden lg:grid lg:grid-cols-4 gap-0 lg:pt-10 px-6 max-w-[1080px] mx-auto ">
 
 
 
@@ -450,19 +450,25 @@ const planDetails = {
               
 
 
-            <div className=' pt-8 text-[13px] grid gap-4 sm:gap-y-1  text-[#737373] sm:py-5 px-4 sm:px-18 md:px-22 xl:mx-40 max-w-[1080px]'>
-              <p>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <span className='text-blue-600'>Terms of Use </span> for more details.</p>
-              <p>Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard, and 1 with Basic and Mobile.</p>
+          
+
+            <div className='sm:px-2   max-w-[1080px] mx-auto '>
+
+                <div className=' pt-8 pl-4 text-[13px] sm:pl-15 md:pl-18  text-[#737373]'>
+              <p>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service <br className=' lg:hidden'/> and device capabilities. Not all content is available in all <br className=' lg:hidden'/>  resolutions. See our <span className='text-blue-600'>Terms of Use </span> for more details.</p>
+              <p>Only people who live with you may use your account. Watch on 4 different devices <br className=' lg:hidden'/>  at the same time with Premium, 2 with Standard, and 1 with Basic and Mobile.</p>
               <p className='sm:mt-2'>Live events are included with any Netflix plan and contain ads.</p>
 
               
             </div>
-<Link
+                  <Link
   to="/platform"
-  className="bg-[#e50913] border-none sm:mt-2 mx-4 sm:ml-20 xl:ml-95 active:border-none hover:bg-red-700 transform duration-200 text-white py-4 text-3xl sm:mx-10 font-semibold rounded w-full max-w-[440px] block text-center"
+  className="bg-[#e50913] border-none sm:mt-2 mx-4 sm:ml-15 lg:ml-60  active:border-none hover:bg-red-700 transform duration-200 text-white py-4 text-3xl  font-semibold rounded w-full max-w-[440px] block text-center"
 >
   Next
 </Link>
+            </div>
+
 
 
 
