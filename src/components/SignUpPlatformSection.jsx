@@ -462,11 +462,7 @@ const planDetails = {
               
             </div>
                   <Link
-<<<<<<< HEAD
   to="/registration"
-=======
-  to="/platform"
->>>>>>> ec74a49276fb50ea52205340d5944dccc3de2feb
   className="bg-[#e50913] border-none sm:mt-2 mx-4 sm:ml-15 lg:ml-60  active:border-none hover:bg-red-700 transform duration-200 text-white py-4 text-3xl  font-semibold rounded w-full max-w-[440px] block text-center"
 >
   Next
