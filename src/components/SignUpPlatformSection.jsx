@@ -463,9 +463,9 @@ const planDetails = {
             </div>
                   <Link
   to="/registration"
-  className="bg-[#e50913] border-none sm:mt-2 mx-4 sm:ml-15 lg:ml-60  active:border-none hover:bg-red-700 transform duration-200 text-white py-4 text-3xl  font-semibold rounded w-full max-w-[440px] block text-center"
+  className="bg-[#e50913] border-none lg:ml-60  active:border-none hover:bg-red-700 transform duration-200 text-white py-4 text-3xl  font-semibold rounded block text-center sm:w-96 sm:mx-auto sm:mt-4 max-w-md mx-auto lg:w-9/12"
 >
-  Next
+  Nex
 </Link>
             </div>
 
