@@ -10,6 +10,7 @@ import { style } from 'framer-motion/client'
 import RegForm from './pages/RegForm'
 import Browse from './pages/Browse'
 import ManageProfiles from './pages/ManageProfiles'
+import ProfilePreference from './pages/ProfilePreference'
 
 const App = () => {
   return (
@@ -24,9 +25,11 @@ const App = () => {
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/registration' element={<Registration step={<> STEP <span className='font-medium'>2</span> OF <span className='font-medium'>3</span> </>} setting={<> <p>Finish setting up your <br /> account</p> </>} personalized={<> <p>Netflix is personalized for you. <br /> Create a password to watch on <br /> any device at any time.</p> </>}/>}></Route>
         <Route path='/regForm' element={<RegForm step={<> STEP <span className='font-medium'>2</span> OF <span className='font-medium'>3</span> </>} member={<>Create a password to start <br /> your membership </>} paperwork={<> Just a few more steps and you're done! <br />
-We hate paperwork, too. </>}/>}/>
+          We hate paperwork, too. </>}/>}/>
           <Route path='/browse' element={<Browse title={"Who's watching"} profileButton={"Manage profile"} addButton={"Add Profile"}/>}/>
           <Route path='/manageProfiles' element={<ManageProfiles />} />
+
+          <Route path='/profilePreference' element={<ProfilePreference/>}/>
       </Routes>
       </BrowserRouter>
     </>

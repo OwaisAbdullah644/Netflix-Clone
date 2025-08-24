@@ -3,7 +3,7 @@ import React from "react";
 const NetflixAvatar = ({
   color = "#ff0000",
   size = 100,
-  title = "Profile",
+  title = "",
   textColor = "#E5E5E5",
   className = "",
 }) => {
